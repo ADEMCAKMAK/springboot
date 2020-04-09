@@ -5,7 +5,7 @@ branch name : feature_request_part_example
 
   Q : How to send http request from client side ? 
 
-	function(uploadedFiles) {
+	function(listOfFiles) {
 
 		let document = new Blob(
 			[JSON.stringify({name:'document', data:'someContentOfData'})],
@@ -35,7 +35,7 @@ branch name : feature_request_part_example
 			method: "POST",
 			success: fnSuccess,
 			error: fnError
-		});
+	});
       
 ----------------------------------------------------------------------------------------------------------------------------------------
       
