@@ -1,7 +1,6 @@
 # springboot
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-BRANCH_NAME : feature_request_part_example
 
   Q : How to send http request from client side ? 
 
