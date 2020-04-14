@@ -1,0 +1,19 @@
+2020-04-10 19:57:29.019 [main] INFO  com.example.demo.DemoApplication.logStarting - Starting DemoApplication on DESKTOP-8J67N1P with PID 21820 (D:\github\demo\target\classes started by IOTTECH in D:\github\demo)
+2020-04-10 19:57:29.147 [main] INFO  com.example.demo.DemoApplication.logStartupProfileInfo - The following profiles are active: dev
+2020-04-10 19:57:30.348 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-10 19:57:30.397 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 26ms. Found 0 JPA repository interfaces.
+2020-04-10 19:57:30.874 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2e8e9054] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-10 19:57:30.944 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-04-10 19:57:31.335 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8090 (http)
+2020-04-10 19:57:31.604 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2279 ms
+2020-04-10 19:57:31.897 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-04-10 19:57:33.087 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-10 19:57:33.375 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-10 19:57:33.743 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8090 (http) with context path '/demo/api'
+2020-04-10 19:57:33.751 [main] INFO  com.example.demo.DemoApplication.logStarted - Started DemoApplication in 5.923 seconds (JVM running for 7.957)
+2020-04-10 19:57:43.388 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-04-10 19:57:43.405 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 15 ms
+2020-04-10 19:57:43.450 [http-nio-8090-exec-2] INFO  com.example.demo.DemoController.sample - info logger
+2020-04-10 19:57:43.460 [http-nio-8090-exec-2] ERROR com.example.demo.DemoController.sample - error logger
+2020-04-10 19:58:00.897 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-10 19:58:00.900 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
