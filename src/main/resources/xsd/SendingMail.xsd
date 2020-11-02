@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://localhost:8090/soapws"
+           xmlns:tns="http://localhost:8090/soapws"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="UploadedFile">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="content" type="xs:base64Binary"/>
+            <xs:element minOccurs="0" name="name" type="xs:string"/>
+            <xs:element minOccurs="0" name="originFileName" type="xs:string"/>
+            <xs:element minOccurs="0" name="contentType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="SendMailRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="from" type="xs:string"/>
+                <xs:element name="to" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="cc" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="bcc" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="attachments" type="tns:UploadedFile" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="subject" type="xs:string"/>
+                <xs:element name="body" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="SendMailResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="result" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
